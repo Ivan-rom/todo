@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>ToDo list</title>
+</head>
+<body>
+    <h1 class="header">Список дел сотрудника</h1>
+    <main class="todo">
+        <ul class="todo__list">
+            <div class="todo__create todo__element">    
+                <form action="#" method="post" class="create__form">
+                    <label for="author">Автор</label>
+                    <input type="text" name="author" id="author" required>
+                    <label for="post">Задача</label>
+                    <input type="text" name="post" id="post" required>
+                    <input type="submit" class="todo-btn">
+                </form>
+                <p class="created__all">Всего дел: <span class="count">0</span></p>
+            </div>
+        </ul>
+    </main>
+</body>
+</html>

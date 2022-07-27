@@ -1,0 +1,112 @@
+@import url(normalize.css);
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color:cadetblue;
+}
+img, svg {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+button {
+    padding: 0;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+
+
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.todo {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.todo__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 340px));
+    column-gap: 20px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.todo__element {
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 115px;
+    position: relative;
+    height: 100%;
+}
+
+
+.post {
+    background-color: lightcoral;
+}
+
+.post__completed {
+    background-color: lightgreen;
+}
+
+.todo__create.todo__element {
+    background-color: lightblue;
+
+}
+
+.todo__create {
+    grid-row: span 2;
+    position: relative;
+    min-height: 245px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin-left: auto;
+    float: right;
+}
+
+.created__all {
+    position: absolute;
+    bottom: 15px;
+}
+
+.post__author {
+    margin-bottom: 10px;
+}
+
+
+.post__ready,
+.post__del {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
