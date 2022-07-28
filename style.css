@@ -9,7 +9,6 @@ body {
     min-width: 320px;
     min-height: 100vh;
     font-family: sans-serif;
-    background-color:cadetblue;
 }
 img, svg {
     max-width: 100%;
@@ -34,17 +33,21 @@ h1, h2, h3, p {
 }
 
 
-
-.header {
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.todo__header {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .todo {
-    max-width: 1180px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px 20px 50px;
+    padding-top: 20px;
+    background-color:cadetblue;
 }
 
 .todo__list {
@@ -83,12 +86,12 @@ h1, h2, h3, p {
     min-height: 245px;
 }
 
-input {
+.todo input {
     width: 100%;
     margin-bottom: 15px;
 }
 
-input[type="submit"] {
+.todo input[type="submit"] {
     width: auto;
     margin-left: auto;
     float: right;
@@ -109,4 +112,37 @@ input[type="submit"] {
     position: absolute;
     bottom: 15px;
     right: 15px;
+}
+
+
+.calculator {
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(250, 226, 193);
+}
+
+.calculator__header {
+    margin-bottom: 20px;
+}
+
+.calculator__form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.calculator input {
+    margin-bottom: 10px;
+}
+
+.calc-btn {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.result {
+    font-size: 30px;
+}
+
+.res_count {
+    font-size: 40px;
 }

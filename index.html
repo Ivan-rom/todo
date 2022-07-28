@@ -5,24 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="todo.js" defer></script>
+    <script src="calc.js" defer></script>
     <title>ToDo list</title>
 </head>
 <body>
-    <h1 class="header">Список дел сотрудника</h1>
-    <main class="todo">
-        <ul class="todo__list">
-            <div class="todo__create todo__element">    
-                <form action="#" method="post" class="create__form">
-                    <label for="author">Автор</label>
-                    <input type="text" name="author" id="author" required>
-                    <label for="post">Задача</label>
-                    <input type="text" name="post" id="post" required>
-                    <input type="submit" class="todo-btn">
-                </form>
-                <p class="created__all">Всего дел: <span class="count">0</span></p>
-            </div>
-        </ul>
-    </main>
+    
+    <div class="todo">
+        <div class="container">
+            <h1 class="todo__header">Список дел сотрудника</h1>
+                <ul class="todo__list">
+                    <div class="todo__create todo__element">    
+                        <form action="#" method="post" class="create__form">
+                            <label for="author">Автор</label>
+                            <input type="text" name="author" id="author" required>
+                            <label for="post">Задача</label>
+                            <input type="text" name="post" id="post" required>
+                        <input type="submit" class="todo-btn">
+                    </form>
+                    <p class="created__all">Всего дел: <span class="count">0</span></p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="calculator">
+        <div class="container">
+            <h2 class="calculator__header">Калькулятор</h2>
+            <form action="#" class="calculator__form">
+                <label for="first-num">Введите первое число</label>
+                <input type="number" name="first-num" id="first-num">
+                <br>
+                <label for="second-num">Введите второе число</label>
+                <input type="number" name="second-num" id="second-num">
+                <br>
+                <button class="calc-btn plus" value="+">+</button>
+                <button class="calc-btn minus" value="-">−</button>
+                <button class="calc-btn mult" value="*">×</button>
+                <button class="calc-btn sep" value="/">÷</button>
+            </form>
+            <p class="result">Результат:</p>
+            <p class="res_count">0</p>
+        </div>
+    </div>
 </body>
 </html>
